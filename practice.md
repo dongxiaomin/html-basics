@@ -88,3 +88,48 @@
 
 		块-->行   display:inline;
 
+### display:inline-block;	
+
+```html
+	<div class="nav">
+		<a href="">111</a>
+		<a href="">222</a>
+		<a href="">333</a>
+	</div>
+	<style>
+		.nav{
+			text-align:center;
+		}
+		.nav a{
+			display:inline-block;
+			background:#ccc;
+			padding:5px;
+		}
+	</style>
+```	
+
+### 去除inline-block元素间间距的3种方法
+
+```html
+	<div class="nav">
+		<a href="">
+		111</a><a href="">
+		222</a><a href="">333</a>
+	</div>
+```
+```html
+	<div class="nav">
+		<a href="">111</a
+		><a href="">222</a
+		><a href="">333</a>
+	</div>
+```
+```html
+	<div class="nav">
+		<a href="">111</a><!--
+		--><a href="">222</a><!--
+		--><a href="">333</a>
+	</div>
+```
+
+
